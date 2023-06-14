@@ -1,5 +1,5 @@
 class Student(object):
-    school_name = "University of Wisconsin - Milwaukee"
+    school_name = "University of Wisconsin - Milwaukee"  # Class variable
 
     def __init__(self, name, age, gender, level, grades=None):
         self.name = name
