@@ -8,3 +8,4 @@ class MyDeck:
     def printer(self):
         for i in range(len(self.deck)):
             print(i)
+
