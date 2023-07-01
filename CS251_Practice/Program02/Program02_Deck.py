@@ -7,7 +7,7 @@ class MyDeck:
     my_deck = list(itertools.product(['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'], ['S', 'C', 'D', 'H']))
 
     @staticmethod
-    def corrected_deck():
+    def _corrected_deck():
         updated_deck = []
         card = ''
         for i in range(len(MyDeck.my_deck)):
@@ -20,7 +20,7 @@ class MyDeck:
 
     def __init__(self, deck=None):
         self.deck = deck or []
-        MyDeck.corrected_deck()
+        MyDeck._corrected_deck()
 
     def init_deck(self):
         if self.deck is None:
