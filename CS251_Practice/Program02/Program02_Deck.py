@@ -19,7 +19,7 @@ class MyDeck:
         MyDeck.my_deck = updated_deck
 
     @staticmethod
-    def card_to_string(self, card):
+    def card_to_string(card):
         print(MyDeck.my_deck[card])
         return MyDeck.my_deck[card]
 
