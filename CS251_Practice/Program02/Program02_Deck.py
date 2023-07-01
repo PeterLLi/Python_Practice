@@ -18,6 +18,11 @@ class MyDeck:
             card = ''
         MyDeck.my_deck = updated_deck
 
+    @staticmethod
+    def card_to_string(self, card):
+        print(MyDeck.my_deck[card])
+        return MyDeck.my_deck[card]
+
     def __init__(self, deck=None):
         self.deck = deck or []
         MyDeck._corrected_deck()

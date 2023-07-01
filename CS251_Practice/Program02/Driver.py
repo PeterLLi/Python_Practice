@@ -7,3 +7,4 @@ class Driver:
     program.init_deck()
     # program.printer()
     program.deal_card()
+    program.card_to_string(0)
