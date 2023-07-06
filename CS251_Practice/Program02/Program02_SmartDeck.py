@@ -5,7 +5,7 @@ import random
 class SmartDeck:
     available_cards = list(range(0, 51))
     my_deck = list(itertools.product(['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'], ['S', 'C', 'D', 'H']))
-    cards_dealt = 0
+    cards_dealt = 52
 
     @staticmethod
     def _corrected_deck():
@@ -27,7 +27,7 @@ class SmartDeck:
     def __init__(self, deck=None):
         self.deck = deck or []
         SmartDeck._corrected_deck()
-        SmartDeck.cards_dealt = 0
+        SmartDeck.cards_dealt = 52
 
     def init_deck(self):
         if self.deck is None:
@@ -36,8 +36,9 @@ class SmartDeck:
         for i in range(52):
             self.deck.append(True)
 
+    @staticmethod
     def empty_deck(self):
-        if self.deck is None or self.deck == []:
+        if SmartDeck.cards_dealt == 0:
             return True
         else:
             return False
