@@ -24,6 +24,13 @@ class SmartDeck:
         print(SmartDeck.my_deck[card])
         return SmartDeck.my_deck[card]
 
+    @staticmethod
+    def empty_deck():
+        if SmartDeck.cards_dealt == 0:
+            return True
+        else:
+            return False
+
     def __init__(self, deck=None):
         self.deck = deck or []
         SmartDeck._corrected_deck()
@@ -35,13 +42,6 @@ class SmartDeck:
 
         for i in range(52):
             self.deck.append(True)
-
-    @staticmethod
-    def empty_deck(self):
-        if SmartDeck.cards_dealt == 0:
-            return True
-        else:
-            return False
 
     def deal_card(self):
         random.shuffle(SmartDeck.available_cards)
