@@ -9,6 +9,7 @@ class Cards:
     def __init__(self):
         self.my_deck = []
         self.init_deck()
+        self.card = self.my_deck[0][0]
         self._shuffle_deck()
 
     def init_deck(self):
@@ -20,3 +21,11 @@ class Cards:
 
     def _shuffle_deck(self):
         random.shuffle(self.my_deck)
+
+    def clone(self, card):
+        self.card = card
+
+    def draw_card(self):
+        self.card = str(self.my_deck[0][0]) + ' of ' + str(self.my_deck[0][1])
+        self.my_deck = self.my_deck[1:]
+        return self.card
