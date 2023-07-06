@@ -11,3 +11,7 @@ class Cards:
 
     def init_deck(self):
         self.my_deck = list(itertools.product(Cards.ranks, Cards.suits))
+
+    def to_string(self):
+        for i in range(len(self.my_deck)):
+            print(self.my_deck[i][0] + ' of ' + self.my_deck[i][1])
