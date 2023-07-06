@@ -1,3 +1,4 @@
+import copy
 import itertools
 import random
 
@@ -22,8 +23,10 @@ class Cards:
     def _shuffle_deck(self):
         random.shuffle(self.my_deck)
 
-    def clone(self, card):
-        self.card = card
+    @staticmethod
+    def clone(card):
+        new_card = copy.deepcopy(card)
+        return new_card
 
     def draw_card(self):
         self.card = str(self.my_deck[0][0]) + ' of ' + str(self.my_deck[0][1])
