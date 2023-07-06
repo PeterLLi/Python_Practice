@@ -14,4 +14,4 @@ class Cards:
 
     def to_string(self):
         for i in range(len(self.my_deck)):
-            print(self.my_deck[i][0] + ' of ' + self.my_deck[i][1])
+            print(str(self.my_deck[i][0]) + ' of ' + str(self.my_deck[i][1]))
