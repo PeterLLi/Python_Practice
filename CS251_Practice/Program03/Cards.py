@@ -13,7 +13,7 @@ class Cards:
 
         self.my_deck = []
         self.init_deck()
-        self.card = card[0]
+        self.card = card
         self._shuffle_deck()
 
     def init_deck(self):
