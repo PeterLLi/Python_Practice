@@ -7,10 +7,13 @@ class Cards:
     suits = ('Spades', 'Diamonds', 'Hearts', 'Clubs')
     ranks = ('Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King')
 
-    def __init__(self):
+    def __init__(self, card=None):
+        if card is None:
+            card = ('Ace', 'Spades')
+
         self.my_deck = []
         self.init_deck()
-        self.card = self.my_deck[0][0]
+        self.card = card[0]
         self._shuffle_deck()
 
     def init_deck(self):
