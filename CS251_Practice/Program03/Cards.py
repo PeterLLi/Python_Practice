@@ -34,3 +34,9 @@ class Cards:
         self.card = str(self.my_deck[0][0]) + ' of ' + str(self.my_deck[0][1])
         self.my_deck = self.my_deck[1:]
         return self.card
+
+    def equals(self, card):
+        if card == self.card:
+            return True
+        else:
+            return False
