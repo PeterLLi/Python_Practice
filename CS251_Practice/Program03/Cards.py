@@ -20,8 +20,7 @@ class Cards:
         self.my_deck = list(itertools.product(Cards.ranks, Cards.suits))
 
     def to_string(self):
-        for i in range(len(self.my_deck)):
-            print(str(self.my_deck[i][0]) + ' of ' + str(self.my_deck[i][1]))
+        print(str(self.card[0] + ' of ' + str(self.card[1])))
 
     def _shuffle_deck(self):
         random.shuffle(self.my_deck)
