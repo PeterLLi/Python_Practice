@@ -6,7 +6,9 @@ class Driver:
     program.to_string()
     program.draw_card()
     card = program.draw_card()
-    print("You drew: " + card)
+    print("First card: " + card)
     cloned_card = program.clone(card)
-    print("Cloned card:  " + cloned_card)
+    card = program.draw_card()
+    print("Second card: " + card)
+
     print(program.equals(cloned_card))
