@@ -8,3 +8,11 @@ class Deck:
 
     def _set_cards_dealt(self, cards_dealt):
         self.cards_dealt = cards_dealt
+
+    def is_empty_deck(self):
+        if not self.deck:
+            print("Empty")
+            return True
+        else:
+            print("Not empty")
+            return False
