@@ -17,7 +17,6 @@ class Deck:
 
     def _shuffle_deck(self):
         for i in range(100):
-            print(i)
             random.shuffle(self.deck)
 
     def get_cards_dealt(self):
@@ -37,7 +36,6 @@ class Deck:
 
     def deal_card(self):
         if self.is_empty_deck() is False:
-            print(self.is_empty_deck())
             card = str(self.deck[0][0]) + ' of ' + str(self.deck[0][1])
             self.deck = self.deck[1:]
             self.cards_dealt += 1
