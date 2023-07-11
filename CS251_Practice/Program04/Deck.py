@@ -16,3 +16,6 @@ class Deck:
         else:
             print("Not empty")
             return False
+
+    def collect_all_cards(self):
+        self.cards_dealt = 0
