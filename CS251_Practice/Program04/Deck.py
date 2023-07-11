@@ -42,3 +42,6 @@ class Deck:
             return card
         else:
             return None
+
+    def shuffle_deck_swap(self, swap_cnt):
+        self.deck
