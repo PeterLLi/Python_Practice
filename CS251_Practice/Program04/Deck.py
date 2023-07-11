@@ -26,13 +26,17 @@ class Deck:
 
     def is_empty_deck(self):
         if not self.deck:
-            print("Empty")
             return True
         else:
-            print("Not empty")
             return False
 
     def collect_all_cards(self):
         self.cards_dealt = 0
 
     def deal_card(self):
+        card = ''
+        if self.is_empty_deck() is False:
+            print(self.is_empty_deck())
+            card = str(self.deck[0][0]) + ' of ' + str(self.deck[0][1])
+            self.deck = self.deck[1:]
+            return card
