@@ -16,7 +16,9 @@ class Deck:
         self.deck = list(itertools.product(Deck.ranks, Deck.suits))
 
     def _shuffle_deck(self):
-        random.shuffle(self.deck)
+        for i in range(100):
+            print(i)
+            random.shuffle(self.deck)
 
     def get_cards_dealt(self):
         return self.cards_dealt
