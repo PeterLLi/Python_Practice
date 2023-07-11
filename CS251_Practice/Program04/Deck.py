@@ -38,6 +38,7 @@ class Deck:
             print(self.is_empty_deck())
             card = str(self.deck[0][0]) + ' of ' + str(self.deck[0][1])
             self.deck = self.deck[1:]
+            self.cards_dealt += 1
             return card
         else:
             return None
