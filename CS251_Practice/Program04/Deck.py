@@ -1,4 +1,5 @@
 import itertools
+import random
 
 
 class Deck:
@@ -9,9 +10,13 @@ class Deck:
         self.deck = []
         self.cards_dealt = 0
         self._init_deck()
+        self._shuffle_deck()
 
     def _init_deck(self):
         self.deck = list(itertools.product(Deck.ranks, Deck.suits))
+
+    def _shuffle_deck(self):
+        random.shuffle(self.deck)
 
     def get_cards_dealt(self):
         return self.cards_dealt
