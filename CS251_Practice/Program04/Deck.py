@@ -45,12 +45,10 @@ class Deck:
 
     def shuffle_deck_swap(self, swap_cnt):
         for i in range(swap_cnt):
-            card1 = random.choice(self.deck)
-            card2 = random.choice([ele for ele in self.deck if ele != card1])
-
+            # card1 = random.choice(self.deck)
+            # card2 = random.choice([ele for ele in self.deck if ele != card1])
+            #
             # card1 = str(card1[0]) + ' of ' + str(card1[1])
             # card2 = str(card2[0]) + ' of ' + str(card2[1])
-            print(card1)
-            print(card2)
-
-            # self.deck[]
+            # print(card1)
+            # print(card2)
